@@ -4,8 +4,8 @@ import { Moon, Sun } from 'lucide-react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import * as React from 'react';
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { cn } from '../../lib/utils/utils';
+import { Button } from '../ui/button';
 
 export default function Header({ className, ...props }: React.ComponentProps<'div'>) {
   const theme = useTheme();

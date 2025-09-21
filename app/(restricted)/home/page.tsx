@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { auth, authConfig, signOut } from '@/lib/auth';
+import VideoChat from '@/components/video-chat/video-chat';
 
 export default async function Home() {
   const session = await auth();
@@ -27,6 +28,7 @@ export default async function Home() {
           </div>
         </div>
       </div>
+      <VideoChat/>
     </main>
   );
 }
